@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <script src="addNewCall.js"></script>
+        <link rel="stylesheet" type="text/css" href="my_style_sheet.css">
+    </head>
+
+<body id="vertical-center">
+    
+<div id="main_div">
+    <div id="add_new_call">
+        <h1>
+            ADD NEW CALL
+        </h1>
+     </div>
+     
+     <!--Add fields dynamically-->
+     <div style="height: 300px; overflow-y: auto; margin-top: 70px; ">
+        <div id="add_new_call_method"></div>
+        <div style="align-self: flex-end;" id="label_sub_que">
+            <div id="space_sub_que"  style="margin-left: 40px;"></div>
+        </div>
+    </div>
+
+     <!--Add new -->
+    <div style="background-color: rgb(240, 232, 232);height: 30px; position: fixed;">
+        <button type="button" onclick="appendRow()" style="background-color: rgb(240, 232, 232);
+ height: 55px;  width: 600px; position: fixed; margin-left: 0px; text-align: right; color: rgb(138, 131, 131);" >
+            + ADD NEW QUESTION
+        </button>
+    </div>
+
+     <!-- Line above button -->
+      <div id="bottom_line">
+        <button class="bottom_button" type="button" onclick="location.href = 'ViewPage.html';">Save</button>
+        <button class="bottom_cancel" type="button" onclick='location.reload()'>Cancel</button>
+    </div>
+    </div>
+</div>
+</body>
+</html>
